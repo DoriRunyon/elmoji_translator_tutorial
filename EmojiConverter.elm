@@ -60,11 +60,11 @@ rotateEmojis key =
 supportedLetters : List String
 supportedLetters =
     [ -- lowercase letters
-      [97..122]
+      List.range 97 122
       -- uppercase letters
-    , [65..90]
+    , List.range 65 90
       -- numbers
-    , [48..57]
+    , List.range 48 57
     ]
         |> List.concat
         |> List.map Char.fromCode
